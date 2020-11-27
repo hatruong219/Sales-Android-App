@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activity.ChitietSp">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <androidx.appcompat.widget.Toolbar
+                app:title="Bình luận về sản phẩm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#009688"
+                tools:ignore="MissingConstraints"/>
+            <TextView
+                android:background="#C3C3C3"
+                android:layout_width="match_parent"
+                android:layout_height="5dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Vui lòng đánh giá"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                />
+            <androidx.appcompat.widget.AppCompatRatingBar
+                android:id="@+id/rbWriteComment"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:isIndicator="false"
+                android:rating="0"
+                android:backgroundTint="#FFEB3B"
+                android:progressTint="#FFEB3B"
+                android:secondaryProgressTint="#FFEB3B"
+                android:stepSize="1" />
+            <EditText
+                android:layout_margin="20dp"
+                android:id="@+id/edtWriteComment"
+                android:padding="10dp"
+                android:gravity="top"
+                android:hint="Đánh giá sản phẩm"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/edittext_binhluan"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"/>
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnAddComment"
+                android:layout_marginTop="25dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:padding="20dp"
+                android:background="@drawable/buttonthemgiohang"
+                android:text="Bình luận"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

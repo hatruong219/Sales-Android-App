@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activity.ChitietSp">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="350dp">
+
+                <ImageView
+                    android:id="@+id/imgProduct"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:maxWidth="360dp"
+                    android:src="@drawable/ic_launcher_background"></ImageView>
+
+            </androidx.cardview.widget.CardView>
+            <TextView
+                android:id="@+id/tvNameProduct"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:textSize="24dp"
+                android:text="Name Product"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            </TextView>
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <androidx.appcompat.widget.AppCompatRatingBar
+                    android:id="@+id/rbProductRating"
+                    style="?android:attr/ratingBarStyleSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:isIndicator="true"
+                    android:rating="0"
+                    android:numStars="5"
+                    android:backgroundTint="#FFEB3B"
+                    android:progressTint="#FFEB3B"
+                    android:secondaryProgressTint="#FFEB3B"
+                    android:stepSize="1" />
+                <TextView
+                    android:id="@+id/tvCommentProduct"
+                    android:textColor="#253AC3"
+                    android:layout_marginLeft="10dp"
+                    android:text="( XEM 0 NHẬN XÉT )"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+            <TextView
+                android:id="@+id/tvPriceProduct"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:textSize="30dp"
+                android:text="0"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#222222"/>
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnAddCart"
+                android:layout_marginTop="25dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:padding="20dp"
+                android:background="@drawable/buttonthemgiohang"
+                android:text="Thêm Vào Giỏ"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_marginTop="15dp"
+                android:background="#24393737"
+                android:layout_height="10dp">
+            </TextView>
+            <LinearLayout
+                android:background="#FFF4C4"
+                android:padding="20dp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:textSize="24dp"
+                    android:textColor="#222222"
+                    android:text="Thông Tin Giao Hàng Dự Kiến"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:layout_marginTop="10dp"
+                    android:text="Thời gian giao hàng dự kiến từ 3 đến 7 ngày.\n32.000 vnđ - Giao hàng tiêu chuẩn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:background="#24393737"
+                android:layout_height="10dp">
+            </TextView>
+            <LinearLayout
+                android:padding="20dp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:textSize="24dp"
+                    android:textColor="#222222"
+                    android:text="Mô Tả Sản Phẩm"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+
+                <org.sufficientlysecure.htmltextview.HtmlTextView
+                    android:id="@+id/tvDescriptionProduct"
+                    android:layout_marginTop="15dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textAppearance="@android:style/TextAppearance.Small" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

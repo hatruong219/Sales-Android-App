@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragment.TrangchuFragment">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_height="match_parent">
+                <TextView
+                    android:textColor="#000000"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="22dp"
+                    android:padding="5dp"
+                    android:text="ĐIỆN THOẠI">
+
+                </TextView>
+
+                <ViewFlipper
+                    android:id="@+id/viewlipper_dt"
+                    android:layout_width="match_parent"
+                    android:layout_height="160dp"
+                    android:padding="5dp">
+                </ViewFlipper>
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#DDFF0000"
+                        android:textSize="22dp"
+                        android:padding="5dp"
+                        android:text="Sản phẩm hot">
+                    </TextView>
+                    <ImageView
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_fire"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+                <androidx.recyclerview.widget.RecyclerView
+                    android:orientation="horizontal"
+                    android:id="@+id/recycleview_trangchudt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                </androidx.recyclerview.widget.RecyclerView>
+                <TextView
+                    android:id="@+id/tvSelectAll1"
+                    android:layout_width="match_parent"
+                    android:textColor="#2196F3"
+                    android:textSize="20dp"
+                    android:text=" Xem tất cả >"
+                    android:gravity="center"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_height="wrap_content">
+                </TextView>
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:background="#24393737"
+                android:layout_height="10dp">
+
+            </TextView>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_marginTop="10dp"
+                android:layout_height="match_parent">
+                <TextView
+                    android:textColor="#000000"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="22dp"
+                    android:padding="5dp"
+                    android:text="MÁY TÍNH">
+
+                </TextView>
+
+                <ViewFlipper
+                    android:id="@+id/viewlipper_mt"
+                    android:layout_width="match_parent"
+                    android:layout_height="160dp"
+                    android:padding="5dp">
+                </ViewFlipper>
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#DDFF0000"
+                        android:textSize="22dp"
+                        android:padding="5dp"
+                        android:text="Sản phẩm hot">
+                    </TextView>
+                    <ImageView
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_fire"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+                <androidx.recyclerview.widget.RecyclerView
+                    android:orientation="horizontal"
+                    android:id="@+id/recycleview_trangchumt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                </androidx.recyclerview.widget.RecyclerView>
+                <TextView
+                    android:id="@+id/tvSelectAll2"
+                    android:layout_width="match_parent"
+                    android:textColor="#2196F3"
+                    android:textSize="20dp"
+                    android:text=" Xem tất cả >"
+                    android:gravity="center"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_height="wrap_content">
+                </TextView>
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:background="#24393737"
+                android:layout_height="10dp">
+
+            </TextView>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_marginTop="10dp"
+                android:layout_height="match_parent">
+                <TextView
+                    android:textColor="#000000"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="22dp"
+                    android:padding="5dp"
+                    android:text="LINH KIỆN ĐIỆN TỬ">
+
+                </TextView>
+
+                <ViewFlipper
+                    android:id="@+id/viewlipper_lk"
+                    android:layout_width="match_parent"
+                    android:layout_height="160dp"
+                    android:padding="5dp">
+                </ViewFlipper>
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#DDFF0000"
+                        android:textSize="22dp"
+                        android:padding="5dp"
+                        android:text="Sản phẩm hot">
+                    </TextView>
+                    <ImageView
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_fire"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+                <androidx.recyclerview.widget.RecyclerView
+                    android:orientation="horizontal"
+                    android:id="@+id/recycleview_trangchulk"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                </androidx.recyclerview.widget.RecyclerView>
+                <TextView
+                    android:id="@+id/tvSelectAll3"
+                    android:layout_width="match_parent"
+                    android:textColor="#2196F3"
+                    android:textSize="20dp"
+                    android:text=" Xem tất cả >"
+                    android:gravity="center"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_height="wrap_content">
+                </TextView>
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:background="#64393737"
+                android:layout_height="10dp">
+
+            </TextView>
+    </LinearLayout>
+
+
+
+
+    </ScrollView>
+</FrameLayout>
